@@ -1,6 +1,6 @@
 import PageTitle from "./PageTitle";
 
-export default function PageContent() {
+export default function PageContent({title}) {
 
     const [title, setTitle] = useState("HTML")
 

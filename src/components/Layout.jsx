@@ -1,13 +1,16 @@
 import Nav from "./nav";
 import ResourceCard from "./ResourceCard";
 
-export default function() {
+export default function({children}) {
     return (
         <>
-        <Nav />
-        <main>
-            <ResourceCard />
-        </main>
-    </>
+            <Nav />
+            <main>
+                {children}
+            </main>
+            <footer>
+                
+            </footer>
+        </>
     )
 }

@@ -1,0 +1,45 @@
+#root {
+    
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    
+}
+
+h1{
+    font-size: 2rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+
+.ressurser{
+    max-width: 400px;
+    width: 100%;
+
+    h3{
+        padding: 10px;
+        padding-left: 0;
+        padding-bottom: 0;
+        margin-bottom: 2px;
+    }
+
+    ul {
+
+        padding-left: 0;
+        margin: 5px 0;
+
+        li{
+            list-style: none;
+        }
+    }
+
+    p{
+        margin: 0;
+    }
+}

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import resources from "../assets/resources"
+import "../styles/nav.scss"
 
 export default function Nav() {
 
@@ -12,14 +13,16 @@ export default function Nav() {
     })
 
     return(
-        <nav>
-            <ul>
-                {categories.map(cat =>
-                    <li key={cat}>
-                        <Link to={`/category/${cat}`}>{cat}</Link>
-                    </li>
-                )}
-            </ul>
-        </nav>
+        <header>
+            <nav>
+                <ul className="navmenu">
+                    {categories.map(cat =>
+                        <button key={cat}>
+                            <Link to={`/category/${cat}`}>{cat}</Link>
+                        </button>
+                    )}
+                </ul>
+            </nav>
+        </header>
     )
 }

@@ -1,0 +1,28 @@
+.navmenu {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    justify-content: center;
+
+    button{
+        background: #897373;
+        padding: 0;
+        
+
+        a{
+            display: block;
+            color: #fff;
+            text-transform: uppercase;
+            min-height: 80px;
+            min-width: 150px;
+        }
+    }
+
+    button:hover{
+        background: #000;
+
+        a{
+            color: #fff;
+        }
+    }
+}

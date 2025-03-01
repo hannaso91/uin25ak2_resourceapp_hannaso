@@ -1,28 +1,32 @@
 .navmenu {
     display: flex;
     list-style: none;
-    gap: 50px;
-    justify-content: center;
+    
+    justify-content: left;
+    margin-bottom: 0;
+    width: 100%;
 
-    button{
-        background: #897373;
+    li{
         padding: 0;
+        background-color: #fff;
+        margin: 0;
+        display: flex;
         
 
         a{
-            display: block;
-            color: #fff;
+            display: inline-block;
+            color: #000;
             text-transform: uppercase;
-            min-height: 80px;
-            min-width: 150px;
+            padding: calc(0.5rem + 4px) 1rem;
+            text-decoration: none;
+            border-bottom: 4px solid #efefef
+           
         }
     }
 
-    button:hover{
+    a:hover{
         background: #000;
-
-        a{
-            color: #fff;
-        }
+        color: #fff;
+        border-bottom: 4px solid yellow
     }
 }

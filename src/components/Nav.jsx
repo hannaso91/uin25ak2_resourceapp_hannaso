@@ -17,9 +17,9 @@ export default function Nav() {
             <nav>
                 <ul className="navmenu">
                     {categories.map(cat =>
-                        <button key={cat}>
+                        <li key={cat}>
                             <Link to={`/category/${cat}`}>{cat}</Link>
-                        </button>
+                        </li>
                     )}
                 </ul>
             </nav>

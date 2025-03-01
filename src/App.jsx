@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './App.css'
-import Main from './components/Layout'
 import { Route, Routes } from 'react-router-dom'
 import ResourceCard from './components/ResourceCard'
 import Layout from './components/Layout'
@@ -13,7 +12,7 @@ function App() {
     <>
       <Layout>
         <Routes>
-          <Route path="/category/:category" element={<ResourceCard/>} />
+          <Route path="/category/:slug" element={<ResourceCard/>} />
         </Routes>
       </Layout>
     </>

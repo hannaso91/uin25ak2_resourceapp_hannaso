@@ -4,8 +4,8 @@ import "../styles/ResourceCard.scss"
 
 export default function ResourceCard() {
 
-    const {category} = useParams()
-    const filteredResources = resources.filter((resource) => resource.category === category )
+    const {slug} = useParams()
+    const filteredResources = resources.filter((resource) => resource.category === slug )
 
     return (
     <>
@@ -14,7 +14,7 @@ export default function ResourceCard() {
                 <h3>{resource.title}</h3>
                 <ul>
                     <li>
-                        <Link to={resource.url}>Les mer her</Link>
+                    <Link to={resource.url}>Les mer her</Link>
                     </li>
                 </ul>
                 <p>Kategori: {resource.category}</p>

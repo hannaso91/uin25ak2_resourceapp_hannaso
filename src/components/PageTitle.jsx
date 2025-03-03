@@ -1,5 +1,5 @@
 export default function PageTitle({heading}) {
-    return <h2>{heading}</h2>
+    return <h2 id="heading">{heading}</h2>
 
-    console.log(heading)
+    
 }

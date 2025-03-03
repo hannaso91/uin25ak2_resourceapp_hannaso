@@ -10,9 +10,10 @@ export default function ResourceCard() {
 
     return (
     <>
+    
         {filteredResources.map((resource) => (
             <>
-            <PageTitle />
+            <PageTitle heading={resource.category}/>
             <article className="ressurser" key={resource.id}>
                 <h3>{resource.title}</h3>
                 <ul>

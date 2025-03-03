@@ -1,3 +1,5 @@
-export default function PageTitle({title}) {
-    return <h2>{title}</h2>
+export default function PageTitle({heading}) {
+    return <h2>{heading}</h2>
+
+    console.log(heading)
 }

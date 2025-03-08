@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import resources from "../assets/resources.js";
-import "../styles/ResourceCard.scss"
 import PageTitle from "./PageTitle.jsx";
 
 export default function ResourceCard({category}) {
@@ -18,8 +17,8 @@ export default function ResourceCard({category}) {
         {/*Mapper her igjennom det som er filtrert for å kunne skrive det ut på siden
         Alle delene vil da bli laget som hver sin article med innholdet definert under og hentet ut av ressursene*/}
         {filteredResources.map((resource) => (
-            <article className="ressurser" key={resource.id}>
-                <h3>{resource.title}</h3>
+            <article className="whiteContainer" key={resource.id}>
+                <h3 className="headtext">{resource.title}</h3>
                 <ul>
                     <li>
                         <Link to={resource.url}>Les mer her</Link>

@@ -1,5 +1,7 @@
 import Nav from "./nav";
 
+//I oppgaven stod det at jeg skulle bruke html fra arbeidskrav 1 og legge inn i Layout. 
+//etter å ha pratet med Tore Marius var det helt greit å gjøre det dynamisk som dette istedet.
 export default function Layout({children}) {
     return (
         <div id="designcontainer"> 

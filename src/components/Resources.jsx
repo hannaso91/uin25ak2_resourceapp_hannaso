@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import resources from "../assets/resources.js";
 import PageTitle from "./PageTitle.jsx";
 
-export default function ResourceCard({category}) {
+export default function Resources({category}) {
 
     //Her filtrer jeg alt som ligger i resources js filen. Det blir sammenlignet mot propen som blir sendt fra app.
     //når disse er like blir de lagret i en ny "array" som har variabelnavn resource

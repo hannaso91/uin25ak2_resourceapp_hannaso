@@ -50,6 +50,11 @@ body {
         cursor: pointer;
         color: var(--blue); 
     } 
+
+    .active-tab{
+        background: var(--allWhite);
+        color: var(--blue);
+    }
 }
 
 main{

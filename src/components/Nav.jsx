@@ -1,10 +1,12 @@
-import { Link, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import resources from "../assets/resources"
+import { useState } from "react";
 
 
 export default function Nav() {
 
     const navigate = useNavigate()
+    const [activeCategory, setActiveCategory] = useState("") // Denne skal holde på valgt kategori
 
     const categories = []; //lager en tom array for å legge til kategorier, da kan jeg også sjekke om det eksisterer fra før
     //jeg ønsket å lage min navbar dynamisk, slik at det senere er enkelt å fikse på dersom det kommer mer
@@ -16,6 +18,7 @@ export default function Nav() {
     })
 
     const handleClick = (category) => {
+        setActiveCategory(category)
         navigate(`/${category}`)
     }
 
@@ -23,7 +26,7 @@ export default function Nav() {
         <header className="navmenu">
             {/*Under her mapper jeg ut det som har blitt pushet inn i categories arrayen min, slik at jeg får en fungerende navigasjonsbar på siden min*/}
                 {categories.map(cat =>
-                    <button key={cat} onClick={() => handleClick(cat)}>{cat}</button>      
+                    <button key={cat} onClick={() => handleClick(cat)} className={activeCategory === cat ? "active-tab" : ""}>{cat}</button>      
                 )}
         </header>
     )
